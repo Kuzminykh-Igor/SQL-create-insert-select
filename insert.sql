@@ -60,7 +60,15 @@ VALUES ('Snake in the Grass', 201, 1),
        ('Bye Bye Forever', 230, 6),
        ('My Mom', 319, 7),
        ('My Darling', 319, 7),
-       ('It Wont End Up', 343, 8);
+       ('It Wont End Up', 343, 8),
+       ('myself', 10, 1),
+       ('by myself', 20, 2),
+       ('bemy self', 30, 3),
+       ('myself by', 40, 4),
+       ('by myself by', 50, 5),
+       ('beemy', 60, 6),
+       ('premyne', 70, 7),
+	   ('my', 80, 8);
 
 INSERT INTO collection (name, year_release)
 VALUES ('Rhythmic waves', 2023),

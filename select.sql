@@ -21,7 +21,14 @@ WHERE name NOT LIKE '% %';
 -- Название треков, которые содержат слово «мой» или «my».
 SELECT name
 FROM track
-WHERE name ILIKE '%мой%' OR name ILIKE '%my%';
+WHERE name ILIKE 'my %'	-- Где слово в начале строки
+OR name ILIKE '% my'	-- Где слово в конце строки
+OR name ILIKE '% my %'	-- Где слово в середине строки
+OR name ILIKE 'my'		-- Где название трека состоит из одного искомого слова
+OR name ILIKE 'мой %'	-- Где слово в начале строки
+OR name ILIKE '% мой'	-- Где слово в конце строки
+OR name ILIKE '% мой %'	-- Где слово в середине строки
+OR name ILIKE 'мой';		-- Где название трека состоит из одного искомого слова
 
 -- Количество исполнителей в каждом жанре.
 SELECT name, COUNT(*) 
